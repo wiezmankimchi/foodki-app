@@ -13,6 +13,14 @@
   },
   "eslintConfig": {
     "extends": "@redwoodjs/eslint-config",
+    "react/no-unknown-property": [
+      "error",
+      {
+        "ignore": [
+          "css"
+        ]
+      }
+    ],
     "root": true
   },
   "engines": {
@@ -22,5 +30,8 @@
   "prisma": {
     "seed": "yarn rw exec seed"
   },
-  "packageManager": "yarn@4.0.2"
+  "packageManager": "yarn@4.0.2",
+  "dependencies": {
+    "@dimfu/recipe-scraper": "^0.3.0"
+  }
 }
